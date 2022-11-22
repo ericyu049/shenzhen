@@ -1,11 +1,9 @@
-<h2>Buses Traffic Congestion Map of Shenzhen China within 24 hours</h2>
-
-
-<div class="container column-align">
-    <img [src]="'/assets/bus/bus' + selected + '.png'">
-    <h3>Hour {{selected}}</h3>
-    <div class="action-bar row-align">
-        <mat-slider style="width: 90%;" max="23" min="0" step="1" tickInterval="1" thumbLabel="true"
+<div class="column-align center" style="padding: 25px;">
+    <span>Buses Traffic Congestion Map of Shenzhen China within 24 hours</span>
+    <img [src]="'/assets/bus/bus' + selected + '.png'" style="height: 80%; width: 80%;">
+    <div class="action-bar row-align" style="align-items: center; width: 100%;">
+        <div style="padding-right: 15px; white-space: nowrap;">Hour {{selected}}</div>
+        <mat-slider style="width: calc(100% - 15px);" max="23" min="0" step="1" tickInterval="1" thumbLabel="true"
             [(ngModel)]="selected" (input)="selected = $event.value">
         </mat-slider>
     </div>

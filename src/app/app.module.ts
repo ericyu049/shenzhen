@@ -8,16 +8,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
-import { ETaxiComponent } from './component/etaxi/etaxi.component';
-import { SubwayComponent } from './component/subway/subway.component';
 import { SimComponent } from './component/sim/sim.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BusComponent,
-    ETaxiComponent,
-    SubwayComponent,
     SimComponent
   ],
   imports: [

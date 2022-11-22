@@ -11,5 +11,18 @@
     justify-content: center;
     align-items: center;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-tab-body-wrapper {
+    flex-grow: 1;
+}
+mat-tab-group {
+    height: 100%;
+}
